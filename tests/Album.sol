@@ -16,12 +16,12 @@ contract Album {
     }// 建構子
     
     // 返回目前的album 資訊
-    function getAlbum() public view returns (string memory, string memory ,unit) {
-        return (artist, albumTitle ,tracks)
+    function getAlbum() public view returns (string memory, string memory ,uint) {
+        return (artist, albumTitle ,tracks);
     }
 
     //設定 album 資訊
-    function setAlbum(string memory _artist, string memory _albumTitle, unit _tracks) public {
+    function setAlbum(string memory _artist, string memory _albumTitle, uint _tracks) public {
         artist = artist;
         albumTitle = albumTitle;
         tracks = tracks;
